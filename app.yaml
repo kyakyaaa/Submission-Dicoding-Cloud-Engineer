@@ -1,9 +1,10 @@
-runtime: python39
+runtime: python27
+api_version: 1
+threadsafe: true
 handlers:
 - url: /
-  static_files: dist/index.html
-  upload: dist/index.html
-
-- url: /(.*)
-  static_files: dist/\1
-  upload: dist/(.*)
+  static_files: index.html
+  upload: index.html
+- unrl: /style.css
+  static_files: style.css
+  upload: style.css
